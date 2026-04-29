@@ -1,4 +1,4 @@
-# 🚀 LLM JobReach API — Production AI System
+# 🚀 LLM JobReach API — Production-Style AI System
 
 Deployed a fine-tuned **LLaMA 3.1 8B model** as a real-time API to generate personalized LinkedIn outreach messages from resume and job description inputs.
 
@@ -32,6 +32,13 @@ User Prompt → Hugging Face Model → Modal GPU Deployment → REST API → Cle
 * LLaMA 3.1 (LoRA fine-tuned)
 * Modal (GPU deployment)
 * FastAPI
+
+---
+
+## 🤗 Model
+
+Hugging Face Model:
+https://huggingface.co/saipriyaadama/llama-3.1-8b-resume-outreach-v1
 
 ---
 
@@ -79,8 +86,8 @@ print(response.json()["response"])
 ## 📈 Improvements over base model
 
 * Better personalization for job outreach
-* Reduced generic phring
-* Structured and controlled outputs
+* Reduced generic phrasing
+* More structured and controlled outputs
 
 ---
 
@@ -92,11 +99,21 @@ print(response.json()["response"])
 
 ---
 
-## 📌 Real-world Use Cases
+## 💼 Real-World Use Cases
 
 * Automated job outreach generation
 * Resume-to-job personalization tools
-* Integration into AI job platforms (e.g., FlightSage)
+* Integration into AI job platforms
+
+---
+
+## 🛠️ Local Setup
+
+```bash
+pip install -r requirements.txt
+modal deploy app.py
+python test.py
+```
 
 ---
 
